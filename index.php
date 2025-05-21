@@ -1,42 +1,67 @@
 <?php
-$title = "login page";
+$title = "signup page";
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>County Gov Login</title>
-    <link href="css/login.css" rel="stylesheet">
-    
+    <title>Kylymyzy County Government Portal - Sign Up</title>
+    <link rel="stylesheet" href="css/signup.css">
 </head>
 <body>
-    <div class="split-container" id="splitContainer">
-        <div class="split-left">
-            <div class="logo-slot">
-                <!-- Replace src with your logo path -->
-                <img src="images/003.jpeg" alt="County Logo" class="logo-img">
-            </div>
-            <div class="welcome-message" id="welcomeMessage">
-                <h2>Welcome to Nyandarua County Gov Portal</h2>
-                <p>Access your account securely and manage your county services.</p>
-                <button type="button"  id="signInBtn">Sign up</button>
-            </div>
-            
-        </div>
-        <div class="split-right" id="splitRight">
-            <div class="login-container futuristic-glow">
-                <div class="login-title">County Gov Login</div>
-                <form class="login-form" action="login.php" method="POST">
-                    <input type="text" name="username" placeholder="Username" required autocomplete="username">
-                    <input type="password" name="password" placeholder="Password" required autocomplete="current-password">
-                    <button type="submit" class="btn">Login</button>
-                    <a href="forgot-password.html" class="forgot-link">Forgot Password?</a>
-                </form>
-            </div>
-        </div>
+    <div class="header">
+        <h1>Nyandarua County Government Portal</h1>
+        <p>Create your account to access county services</p>
     </div>
     
-   
+    <div class="signup-container">
+        <div class="signup-form">
+            <h2>Create Your Account</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required placeholder="Enter your last name">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Create a password">
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm your password">
+                </div>
+
+                <button type="submit" class="signup-btn">Create Account</button>
+
+                <div class="terms">
+                    By signing up, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                </div>
+
+                <div class="login-link">
+                    Already have an account? <a href="login.php">Login here</a>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
-</html>
+</html> 
