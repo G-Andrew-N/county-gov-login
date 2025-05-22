@@ -1,3 +1,3 @@
 <?php
-echo password_hash('nyandarua123', PASSWORD_DEFAULT);
+echo password_hash('yinyaw', PASSWORD_DEFAULT);
 ?>
