@@ -69,7 +69,23 @@
             border-radius: 5px;
             font-size: 1rem;
         }
+        
+       select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            background: #fff;
+            color: #333;
+            transition: border-color 0.2s;
+            box-sizing: border-box;
+        }
 
+        select:focus {
+            outline: none;
+            border-color: #2c6cb0;
+        }
         .form-group input:focus {
             outline: none;
             border-color: #2c6cb0;

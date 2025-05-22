@@ -4,132 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nyandarua County Government Portal - Sign Up</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            min-height: 100vh;
-            background: linear-gradient(135deg, #1a4b84, #2c6cb0);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 2rem;
-        }
-
-        .header {
-            text-align: center;
-            color: white;
-            margin-bottom: 2rem;
-        }
-
-        .header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-
-        .signup-container {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-            width: 100%;
-            max-width: 600px;
-        }
-
-        .signup-form h2 {
-            color: #1a4b84;
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-
-        .form-row {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group {
-            flex: 1;
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: #333;
-        }
-
-        .form-group input {
-            width: 100%;
-            padding: 0.8rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-
-        .form-group input:focus {
-            outline: none;
-            border-color: #2c6cb0;
-        }
-
-        .signup-btn {
-            width: 100%;
-            padding: 0.8rem;
-            background: #1a4b84;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        .signup-btn:hover {
-            background: #2c6cb0;
-        }
-
-        .login-link {
-            text-align: center;
-            margin-top: 1.5rem;
-            color: #666;
-        }
-
-        .login-link a {
-            color: #1a4b84;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .login-link a:hover {
-            text-decoration: underline;
-        }
-
-        .terms {
-            text-align: center;
-            margin-top: 1rem;
-            font-size: 0.9rem;
-            color: #666;
-        }
-
-        .terms a {
-            color: #1a4b84;
-            text-decoration: none;
-        }
-
-        .terms a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="css/signup.css">
 </head>
 <body>
     <div class="header">
@@ -150,6 +25,16 @@
                         <label for="lastName">Last Name</label>
                         <input type="text" id="lastName" name="lastName" required placeholder="Enter your last name">
                     </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="Role">Acc Type</label>
+                    <select type="text" id="AccType" name="AccType" required placeholder="Select your account type">
+                        <option value="default" disabled selected>Select your account type</option>
+                        <option value="Citizen">Citizen</option>
+                        <option value="Staff">Staff</option>
+                        <option value="Admin">Admin</option>
+                    </select>
                 </div>
                 
                 <div class="form-group">

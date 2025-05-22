@@ -1,0 +1,95 @@
+ body {
+            background: #f4f8fb;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .admin-header {
+            background: #1a4b84;
+            color: #fff;
+            padding: 1.5rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .admin-header h1 {
+            margin: 0;
+            font-size: 1.7rem;
+        }
+        .admin-header .logout-btn {
+            background: #fff;
+            color: #1a4b84;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .admin-header .logout-btn:hover {
+            background: #eaf3fb;
+        }
+        .admin-container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            padding: 2rem;
+        }
+        .admin-nav {
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 2rem;
+        }
+        .admin-nav a {
+            color: #1a4b84;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding-bottom: 0.2rem;
+            border-bottom: 2px solid transparent;
+            transition: border 0.2s;
+        }
+        .admin-nav a.active, .admin-nav a:hover {
+            border-bottom: 2px solid #1a4b84;
+        }
+        .users-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        .users-table th, .users-table td {
+            padding: 0.8rem;
+            border-bottom: 1px solid #e0e6ed;
+            text-align: left;
+        }
+        .users-table th {
+            background: #f4f8fb;
+            color: #1a4b84;
+        }
+        .action-btn {
+            padding: 0.4rem 0.9rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 0.97rem;
+            cursor: pointer;
+            margin-right: 0.5rem;
+        }
+        .edit-btn {
+            background: #2c6cb0;
+            color: #fff;
+        }
+        .delete-btn {
+            background: #e74c3c;
+            color: #fff;
+        }
+        .role-select {
+            padding: 0.3rem 0.7rem;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        @media (max-width: 700px) {
+            .admin-container { padding: 1rem; }
+            .users-table th, .users-table td { padding: 0.5rem; }
+        }

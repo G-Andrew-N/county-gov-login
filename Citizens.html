@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyandarua County Citizen Dashboard</title>
+    <link rel="stylesheet" href="css/Citizens.css">
+</head>
+<body>
+    <div class="citizen-header">
+        <h1>Citizen Dashboard - Nyandarua County</h1>
+        <form action="logout.php" method="POST" style="margin:0;">
+            <button type="submit" class="logout-btn">Logout</button>
+        </form>
+    </div>
+    <div class="dashboard-container">
+        <nav class="dashboard-nav">
+            <a href="#" class="active">Dashboard</a>
+            <a href="#">My Requests</a>
+            <a href="#">Profile</a>
+        </nav>
+        <div class="dashboard-welcome">
+            Welcome, <strong>Citizen</strong>! Here you can view your service requests, track their status, and manage your profile.
+        </div>
+        <div class="dashboard-cards">
+            <div class="dashboard-card">
+                <h3>Open Requests</h3>
+                <span>2</span>
+            </div>
+            <div class="dashboard-card">
+                <h3>Completed Requests</h3>
+                <span>7</span>
+            </div>
+            <div class="dashboard-card">
+                <h3>Pending Payments</h3>
+                <span>1</span>
+            </div>
+        </div>
+        <div class="requests-section">
+            <h2>Recent Service Requests</h2>
+            <table class="requests-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Request</th>
+                        <th>Date Submitted</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example static data, replace with dynamic data as needed -->
+                    <tr>
+                        <td>1</td>
+                        <td>Business Permit Renewal</td>
+                        <td>2025-05-19</td>
+                        <td><span class="status-badge inprogress">In Progress</span></td>
+                        <td><button class="action-btn">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Land Rate Payment</td>
+                        <td>2025-05-10</td>
+                        <td><span class="status-badge completed">Completed</span></td>
+                        <td><button class="action-btn">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Garbage Collection Request</td>
+                        <td>2025-05-08</td>
+                        <td><span class="status-badge pending">Pending</span></td>
+                        <td><button class="action-btn">View</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

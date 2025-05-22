@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyandarua County Admin Panel</title>
+    <link rel="stylesheet" href="css/AdminPanel.css">
+    
+</head>
+<body>
+    <div class="admin-header">
+        <h1>Admin Panel - Nyandarua County</h1>
+        <form action="logout.php" method="POST" style="margin:0;">
+            <button type="submit" class="logout-btn">Logout</button>
+        </form>
+    </div>
+    <div class="admin-container">
+        <nav class="admin-nav">
+            <a href="#" class="active">Manage Users</a>
+            <a href="#">Roles & Permissions</a>
+            <a href="#">Audit Logs</a>
+        </nav>
+        <h2>Users</h2>
+        <table class="users-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example static data, replace with PHP loop for real data -->
+                <tr>
+                    <td>1</td>
+                    <td>Jane Doe</td>
+                    <td>jane@example.com</td>
+                    <td>0712345678</td>
+                    <td>
+                        <select class="role-select">
+                            <option>User</option>
+                            <option selected>Admin</option>
+                        </select>
+                    </td>
+                    <td>Active</td>
+                    <td>
+                        <button class="action-btn edit-btn">Edit</button>
+                        <button class="action-btn delete-btn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>John Smith</td>
+                    <td>john@example.com</td>
+                    <td>0798765432</td>
+                    <td>
+                        <select class="role-select">
+                            <option selected>User</option>
+                            <option>Admin</option>
+                        </select>
+                    </td>
+                    <td>Inactive</td>
+                    <td>
+                        <button class="action-btn edit-btn">Edit</button>
+                        <button class="action-btn delete-btn">Delete</button>
+                    </td>
+                </tr>
+                <!-- End example data -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
