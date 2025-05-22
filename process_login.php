@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         exit;
     } else {
-        // Invalid login
+        // Invalid user login
         header('Location: login.php?error=1');
         exit;
     }
