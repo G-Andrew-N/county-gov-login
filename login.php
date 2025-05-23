@@ -10,6 +10,31 @@ $title = "login page";
     <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
+
+    <?php if (isset($_GET['error'])): ?>
+<div id="error-popup" style="
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #e74c3c;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    z-index: 9999;
+    font-size: 1.1rem;
+">
+    Invalid email or password. Please try again.
+</div>
+<script>
+    setTimeout(function() {
+        var popup = document.getElementById('error-popup');
+        if (popup) popup.style.display = 'none';
+    }, 3500);
+</script>
+<?php endif; ?>
+
     <div class="left-section">
         <div class="welcome-text">
             <h1>Welcome to Nyandarua County Government Portal</h1>
@@ -31,7 +56,7 @@ $title = "login page";
                 </div>
                 <button type="submit" class="login-btn">Login</button>
                 <div class="forgot-password">
-                    <a href="#">Forgot Password?</a>
+                    <a href="forgot_password.php">Forgot Password?</a>
                 </div>
                 <div class="signup-link">
                     Don't have an account? <a href="signup.php">Sign up here</a>
