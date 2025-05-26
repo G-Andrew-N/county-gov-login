@@ -25,6 +25,4 @@ if ($user) {
 $stmt = $pdo->prepare("INSERT INTO users (first_name, last_name, email, phone, password_hash, status) VALUES (?, ?, ?, ?, ?, 'Active')");
 $stmt->execute([$firstName, $lastName, $email, $phone, $passwordHash]);
 
-
-
 ?>

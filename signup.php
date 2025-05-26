@@ -32,7 +32,8 @@
                     <select type="text" id="AccType" name="AccType" required placeholder="Select your account type">
                         <option value="default" disabled selected>Select your account type</option>
                         <option value="Citizen">Citizen</option>
-                        <option value="Admin">Admin</option>
+                        
+                        <option value="Staff">Staff</option>
                     </select>
                 </div>
                 
